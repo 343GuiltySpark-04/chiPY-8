@@ -19,7 +19,6 @@ FONT = bytearray([
     0xF0, 0x80, 0xF0, 0x80, 0x80,  # F
 ])
 
-
 KEY_MAP = {
     0x0: pygame.K_x,
     0x1: pygame.K_1,
