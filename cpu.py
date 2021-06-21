@@ -102,7 +102,7 @@ class CPU:
                 print("Not running RCA 1802 program; skipping")
                 self.program_counter += 2
 
-        
+
 
 
 
