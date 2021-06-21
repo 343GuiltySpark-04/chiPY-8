@@ -85,7 +85,24 @@ class CPU:
         byte = opcode & 0x00ff
         nibble = opcode & 0x000f
 
+        if top == 0:
+            if address == 0x0e0:
+                self.display.clear_screen()
+                self.program_counter += 2
 
+            elif address == 0x0ee:
+                if self.stack:
+                    self.program_counter = self.stack.pop()
+
+                else:
+                    print("Invalid return")
+                    exit(1)
+
+            else:
+                print("Not running RCA 1802 program; skipping")
+                self.program_counter += 2
+
+        
 
 
 
