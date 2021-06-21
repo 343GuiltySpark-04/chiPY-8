@@ -2,3 +2,4 @@
 *.xml
 *.iml
 .idea/chiPY-8.iml
+/venv/
